@@ -1,0 +1,110 @@
+/* ISTRUZIONI GENERICHE DI PAGINA */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#container{
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* ISTRUZIONI HEADER */
+
+.logo img{
+  width: 200px;
+  height: auto;
+  border-right: 1px solid grey;
+  padding-right: 10px;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 15px 20px 0 0;
+  list-style-type: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ISTRUZIONI SECTION-ROW */
+section{
+  margin: 20px 0px;
+}
+
+/* section row uno */
+.jumbotron{
+  /* debug */
+  height: 300px;
+  background-color: orange;
+  text-align: center;
+  line-height: 300px;
+}
+
+/* section row due */
+.row{
+  height: 400px;
+  /* debug */
+  background-color: blue;
+}
+
+.row .topside{
+  /* debug */
+  height: 20%;
+  background-color: lightblue;
+}
+
+.row .bottomside{
+  margin: 10px 0;
+  height: calc(100% - (20% + 20px));
+  /* debug */
+}
+
+.bottomside:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.bottomside .aside{
+  width: 25%;
+  float: left;
+  /* debug */
+  background-color: lightblue;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.bottomside .center{
+  width: calc(50% - 20px);
+  float: left;
+  /* debug */
+  background-color: lightblue;
+  height: 100%;
+  border:1px solid black;
+  margin: 0 10px;
+  position: relative;
+}
+
+.bottomside h4{
+  /* debug */
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ISTRUZIONI FOOTER */
+footer{
+  height: 50px;
+  background-color: violet;
+  /* debug */
+  text-align: center;
+  line-height: 50px;
+}
