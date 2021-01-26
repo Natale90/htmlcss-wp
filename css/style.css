@@ -11,7 +11,8 @@
 }
 
 section{
-  margin: 20px 0px;
+  margin: 40px 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ISTRUZIONI HEADER */
@@ -64,33 +65,75 @@ header ul li a{
   margin-bottom: 100px;
   position: absolute;
   bottom:0px;
-  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
 .brand_claim h3{
   font-weight: normal;
-  font-size: 24px;
+  font-size: 26px;
   color: white;
 }
 
-/* section row due */
-.row{
-  height: 400px;
-  /* debug */
-  background-color: blue;
-}
+/* SECONDA SECTION ROW */
 
+/* row topside */
 .row .topside{
-  /* debug */
-  height: 20%;
-  background-color: lightblue;
+  margin: 20px 0;
 }
 
-.row .bottomside{
-  margin: 10px 0;
-  height: calc(100% - (20% + 20px));
-  /* debug */
+.topside h1{
+  font-size: 26px;
+}
+
+.topside h5{
+  font-weight: normal;
+  color: grey;
+}
+
+
+/* row bottomside */
+.bottomside{
+  margin: 10px 0 10px 0;
+}
+
+/* column icon instructions */
+.column_icon{
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+}
+
+.column_icon.left{
+  background-image: url(../img/img-1.jpg);
+}
+
+.column_icon.middle{
+  background-image: url(../img/banner-2.jpg);
+}
+.column_icon.right{
+  background-image: url(../img/img-3.jpg);
+}
+
+
+.bottomside .aside{
+  width: 25%;
+  float: left;
+  position: relative;
+}
+
+.bottomside .center{
+  width: calc(50% - 20px);
+  float: left;
+  margin: 0 10px;
+  position: relative;
+}
+
+.column_title{
+  margin: 20px 0;
 }
 
 .bottomside:after{
@@ -99,40 +142,15 @@ header ul li a{
   clear: both;
 }
 
-.bottomside .aside{
-  width: 25%;
-  float: left;
-  /* debug */
-  background-color: lightblue;
-  height: 100%;
-  border: 1px solid black;
-  position: relative;
-}
-
-.bottomside .center{
-  width: calc(50% - 20px);
-  float: left;
-  /* debug */
-  background-color: lightblue;
-  height: 100%;
-  border:1px solid black;
-  margin: 0 10px;
-  position: relative;
-}
-
-.bottomside h4{
-  /* debug */
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* ISTRUZIONI FOOTER */
 footer{
-  height: 50px;
-  background-color: violet;
-  /* debug */
+  padding: 10px;
   text-align: center;
-  line-height: 50px;
+  border-bottom: 1px solid black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#heart{
+  color: red;
+  font-size: 25px;
 }
